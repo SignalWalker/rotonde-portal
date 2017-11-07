@@ -4,7 +4,10 @@
   "port": [
     "dat://2f21e3c122ef0f2555d3a99497710cd875c7b0383f998a2d37c02c042d598485/",
     "dat://7f2ef715c36b6cd226102192ba220c73384c32e4beb49601fb3f5bba4719e0c5/",
-    "dat://c4ec420ca3fc4205002769d715962dfa96eb595853d1e856c78df1cad73d36a7/"
+    "dat://c4ec420ca3fc4205002769d715962dfa96eb595853d1e856c78df1cad73d36a7/",
+    "dat://ebf801172bcfb9fec331ba3140dad281e7e6533c3bded1f3aa38ce6c490604d7/",
+    "dat://92878d8f24d76c96c7beecf8ac45b41d53483bdf3cc50d62423b3c9b9531e97d/",
+    "dat://bac08ea9ecf0841bc32863191ada0d4a597f865d0badd5d5231448021d64a0dd/"
   ],
   "feed": [
     {
@@ -24,9 +27,15 @@
       "timestamp": 1510029440153,
       "media": "",
       "target": []
+    },
+    {
+      "message": "alright now the css on my rotonde is looking snazzy",
+      "timestamp": 1510093052939,
+      "media": "",
+      "target": []
     }
   ],
-  "site": "dat://ash.net",
+  "site": "http://www.ashwalker.net/",
   "dat": "",
   "client_version": "0.1.68"
 }

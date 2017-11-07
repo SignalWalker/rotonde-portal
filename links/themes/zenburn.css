@@ -1,0 +1,136 @@
+/* beep beep idk how to css */
+/* based on @floatvoid's css, at dat://bac08ea9ecf0841bc32863191ada0d4a597f865d0badd5d5231448021d64a0dd/ */
+/* colors from zenburn: http://kippura.org/zenburnpage/ */
+
+:root {
+	--bg:#3f3f3f;
+	--fg:#dcdccc;
+	--hl:#60b48a;
+	--mO:#506070;
+	--qt:var(--mO);
+}
+
+body,
+body #feed .badge,
+body #feed .entry {
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+body #portal #version a,
+body #portal #profile .name {
+	color: var(--hl);
+}
+
+body #feed #tabs,
+body #operator { background-color: var(--bg); }
+
+body #operator #wrapper {
+	background-color: var( --bg ); color: var(--fg);
+	border-bottom: 0; border: 1px solid var( --hl );
+	border-radius: 8px;
+}
+body #operator textarea { color:var( --fg ); }
+body #operator #options { color:var( --hl ); }
+body #operator #hint { color: var(--hl); }
+body #operator #hint.autocomplete { color:var(--hl); }
+body #operator #options t:hover { text-decoration: underline; color:var(--hl); cursor:pointer; }
+body #operator #rune { left:8px; color:var(--hl); }
+body #feed #tabs {
+	border-bottom: 1px solid var(--hl);
+  	background-color: var(--bg);
+}
+
+body #feed #tabs t {
+	background-color: var(--bg);
+	color: var(--mO);
+}
+
+body #feed #tabs t:hover,
+body #feed #tabs t.active { 
+	background: var(--bg);
+	color: var(--hl);
+	cursor:pointer;
+}
+body #feed #tabs :first-child { 
+	background: var(--bg);
+	color: var(--hl);
+}
+body #feed #tabs :first-child:hover { 
+	background: var(--bg)!important;
+	color: var(--hl)!important;
+}
+body #feed #tabs t.active {
+	background-color: var(--bg);
+	color: var(--hl);
+	cursor:pointer;
+}
+
+body #feed.mentions #tabs :first-child {
+	background: var(--bg);
+	color: var(--mO);
+}
+body #feed.mentions #tab_mentions {
+	background: var(--bg);
+	color: var(--hl);
+}
+body #feed.portals #tab_portals {
+	background: var(--bg);
+	color: var(--hl);
+}
+body #feed.portals #tabs :first-child {
+	background: var(--bg);
+	color: var(--mO);
+}
+
+body #feed .entry {
+	border-left: 1px solid transparent;
+	background-color: transparent;
+}
+body #feed .entry:hover {
+	border-left: 1px solid var(--hl);
+	background-color: transparent;
+}
+body #feed .entry .link { 
+	color:var(--mO);
+	border: 1px solid var(--mO);
+	border-radius: 16px;
+}
+body #feed .entry .link:hover {
+	background: transparent;
+	border: 1px solid var(--hl);
+	color: var(--hl);
+}
+
+body #feed.mentions .entry { 
+	background-color: transparent;
+}
+
+body #feed.mentions .entry.mention { 
+	background-color: transparent;
+	color: var(--fg);
+	display: block
+}
+
+body #feed *.highlight {
+	color: var(--hl)!important;
+}
+
+body #feed .entry .portal { 
+	color: var(--hl);
+}
+body #feed .entry .message.quote {
+	color: var(--qt);
+	border-left: 1px solid var(--hl);
+}
+
+.badge a,
+.badge span.version.same { 
+	background-color: var(--transparent);
+	color: var(--hl);
+}
+
+.badge span.version {
+	background-color: var(--transparent);
+	color: var(--mO);
+}
