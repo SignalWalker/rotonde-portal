@@ -1,5 +1,5 @@
 {
-  "name": "Ash",
+  "name": "ash",
   "desc": "\"Ash Walker\"",
   "port": [
     "dat://2f21e3c122ef0f2555d3a99497710cd875c7b0383f998a2d37c02c042d598485/",
@@ -8,7 +8,14 @@
     "dat://ebf801172bcfb9fec331ba3140dad281e7e6533c3bded1f3aa38ce6c490604d7/",
     "dat://92878d8f24d76c96c7beecf8ac45b41d53483bdf3cc50d62423b3c9b9531e97d/",
     "dat://bac08ea9ecf0841bc32863191ada0d4a597f865d0badd5d5231448021d64a0dd/",
-    "dat://72671c5004d3b956791b6ffca7f05025d62309feaf99cde04c6f434189694291/"
+    "dat://72671c5004d3b956791b6ffca7f05025d62309feaf99cde04c6f434189694291/",
+    "dat://60f134e8fb243fbf4a0f8a252cc9aa09bdcf4ecac2efbcb8455aa01c8a04b4b0/",
+    "dat://301d24cb8c3e91910fdbbb308b814f36d36ca26316655f50e9f83e5f34b97a41/",
+    "dat://5b280edbf241644a620604b5a039656729ab59faebad598670671baf66ded47c/",
+    "dat://ced1c0e68460000e6fb5d5723a991ecac057b76f4eee0f8ff12c2dc3c5a3ff35/",
+    "dat://5276ca2f92b6d508933ac4b01ef9078938f69bed9ca15c462617f531641b7a6b/",
+    "dat://a1c3d7c70006fb10984af8bd8c3e1d79dd23e3f2e0c1f83e80cb30474b0be178/",
+    "dat://3c14fc1b3ead41e4207a2e80c891cf4868fcf8fd007ac952f16b2bd262e0e51e/"
   ],
   "feed": [
     {
@@ -34,6 +41,14 @@
       "timestamp": 1510093052939,
       "media": "",
       "target": []
+    },
+    {
+      "message": "@ash test",
+      "timestamp": 1510177247373,
+      "media": "",
+      "target": [
+        "dat://rotonde-ash.hashbase.io"
+      ]
     }
   ],
   "site": "http://www.ashwalker.net/",
