@@ -3,17 +3,30 @@
 /* colors from zenburn: http://kippura.org/zenburnpage/ */
 
 :root {
-	--bg:#3f3f3f;
+	--bg0:#2e2e2e;
+	--bg1:#3f3f3f;
+	--bg2:#505050;
 	--fg:#dcdccc;
 	--hl:#60b48a;
 	--mO:#506070;
 	--qt:var(--mO);
 }
 
-body,
+@font-face {
+	font-family: 'Inconsolata-Regular';
+	src: url('../../media/fonts/Inconsolata-Regular.ttf');
+}
+
+* {
+	font-family: "Inconsolata-Regular"!important;
+}
+
+body {
+	background-color: var(--bg0);
+}
 body #feed .badge,
 body #feed .entry {
-	background-color: var(--bg);
+	background-color: transparent;
 	color: var(--fg);
 }
 
@@ -23,10 +36,10 @@ body #portal #profile .name {
 }
 
 body #feed #tabs,
-body #operator { background-color: var(--bg); }
+body #operator { background-color: var(--bg0); }
 
 body #operator #wrapper {
-	background-color: var( --bg ); color: var(--fg);
+	background-color: var(--bg0); color: var(--fg);
 	border-bottom: 0; border: 1px solid var( --hl );
 	border-radius: 8px;
 }
@@ -38,58 +51,59 @@ body #operator #options t:hover { text-decoration: underline; color:var(--hl); c
 body #operator #rune { left:8px; color:var(--hl); }
 body #feed #tabs {
 	border-bottom: 1px solid var(--hl);
-  	background-color: var(--bg);
+  	background-color: var(--bg0);
 }
 
 body #feed #tabs t {
-	background-color: var(--bg);
+	background-color: var(--bg0);
 	color: var(--mO);
 }
 
 body #feed #tabs t:hover,
 body #feed #tabs t.active { 
-	background: var(--bg);
+	background: var(--bg0);
 	color: var(--hl);
 	cursor:pointer;
 }
 body #feed #tabs :first-child { 
-	background: var(--bg);
+	background: var(--bg0);
 	color: var(--hl);
 }
 body #feed #tabs :first-child:hover { 
-	background: var(--bg)!important;
+	background: var(--bg0)!important;
 	color: var(--hl)!important;
 }
 body #feed #tabs t.active {
-	background-color: var(--bg);
+	background-color: var(--bg0);
 	color: var(--hl);
 	cursor:pointer;
 }
 
 body #feed.mentions #tabs :first-child {
-	background: var(--bg);
+	background: var(--bg0);
 	color: var(--mO);
 }
 body #feed.mentions #tab_mentions {
-	background: var(--bg);
+	background: var(--bg0);
 	color: var(--hl);
 }
 body #feed.portals #tab_portals {
-	background: var(--bg);
+	background: var(--bg0);
 	color: var(--hl);
 }
 body #feed.portals #tabs :first-child {
-	background: var(--bg);
+	background: var(--bg0);
 	color: var(--mO);
 }
 
 body #feed .entry {
-	border-left: 1px solid transparent;
-	background-color: transparent;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	border: 1px solid var(--bg2);
 }
 body #feed .entry:hover {
-	border-left: 1px solid var(--hl);
-	background-color: transparent;
+	border: 1px solid var(--hl);
+	background-color: var(--bg1);
 }
 body #feed .entry .link { 
 	color:var(--mO);
@@ -122,6 +136,19 @@ body #feed .entry .portal {
 body #feed .entry .message.quote {
 	color: var(--qt);
 	border-left: 1px solid var(--hl);
+}
+
+.badge {
+	width: calc(25% - 34px);
+	margin-top: 12px;
+	margin-right: 12px;
+	margin-bottom: 0px;
+	border: 1px solid var(--bg2);
+}
+
+.badge:hover {
+	background-color: var(--bg1)!important;
+	border: 1px solid var(--hl);
 }
 
 .badge a,
